@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view tasks</title>
+</head>
+<body>
+        <h1>task list</h1>
+        <ul>
+            {% for task in tasklist %}
+            <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+<table>
+    <tr>
+        <th>Name </th><th>Age</th><th>Salary</th><th colspan="2">Phno</th>
+    </tr>
+    {% for employee in employeelist %}
+        <tr>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.Salary }}</td>
+            <td>{{ employee.phno.home }}</td>
+            <td>{{ employee.phno.office }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

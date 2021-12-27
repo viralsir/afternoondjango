@@ -24,6 +24,7 @@ urlpatterns = [
     path("cus/",contactus,name="contact-us"),
     path("home/",home,name="home"),
     path("greetings/",include("greetings.urls")),
-    path("newyear/",include("newyear.urls"))
+    path("newyear/",include("newyear.urls")),
+    path("task/",include("task.urls"))
 
 ]
