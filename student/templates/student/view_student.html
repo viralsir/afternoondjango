@@ -1,0 +1,12 @@
+{% extends "student/layout.html" %}
+{% block body %}
+    <table class="table table-primary">
+        <tr><th>Name</th><th>Age</th></tr>
+        {% for student in studentlist %}
+            <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

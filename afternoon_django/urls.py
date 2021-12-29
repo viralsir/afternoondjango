@@ -25,6 +25,7 @@ urlpatterns = [
     path("home/",home,name="home"),
     path("greetings/",include("greetings.urls")),
     path("newyear/",include("newyear.urls")),
-    path("task/",include("task.urls"))
+    path("task/",include("task.urls")),
+    path("student/",include("student.urls"))
 
 ]
